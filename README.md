@@ -15,7 +15,7 @@ Supports 4 methods for each module (Html5Entities, XmlEntities, Html4Entities):
 **All HTML entities encoding/decoding**
 
 ```javascript
-import { Html5Entities } from "https://deno.land/x/html_entities@v1.0/mod.ts";
+import { Html5Entities } from "https://deno.land/x/html_entities@v1.0/mod.js";
 
 Html5Entities.encode('<>"&©®∆'); // &lt;&gt;&quot;&amp;&copy;&reg;∆
 Html5Entities.encodeNonUTF('<>"&©®∆'); // &lt;&gt;&quot;&amp;&copy;&reg;&#8710;
@@ -28,7 +28,7 @@ Html5Entities.decode('&lt;&gt;&quot;&amp;&copy;&reg;'); // <>"&©®
 HTML validity and XSS attack prevention you can achieve from XmlEntities module.
 
 ```js
-import { XmlEntities } from "https://deno.land/x/html_entities@v1.0/mod.ts";
+import { XmlEntities } from "https://deno.land/x/html_entities@v1.0/mod.js";
 
 XmlEntities.encode('<>"\'&©®'); // &lt;&gt;&quot;&apos;&amp;©®
 XmlEntities.encodeNonUTF('<>"\'&©®'); // &lt;&gt;&quot;&apos;&amp;&#169;&#174;
